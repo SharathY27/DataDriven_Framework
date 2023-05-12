@@ -1,0 +1,53 @@
+Need of Framework Design:
+
+* Reusability
+* Organised
+* Manageable
+* Understandable
+* Scalable
+* Cost effective
+* Rules 
+* Standard
+
+
+
+
+1) Why we need data driven testing?
+	When we want to test with multiple data its not a good practice to pass data for each methods/functions.
+	Space complexity is more as we need to write pass many data in class file and thus creating multiple class for multiple scenarios
+	To overcome this we need Data driven testing
+	
+2) What is Data driven testing?
+	Passing data from excel, CSV or through parameterization & Data providers  in testng
+	Above method actually reduce the time and space complexity which is good practice for framework design
+	
+3)  How you can achieve this?
+
+	With help of selenium - web interaction
+				 testNG   - test Management
+				 apache POI & JXL(Java XL) Jars - Excel workbook/sheet reading 
+				 
+				 
+	Steps with Apache POI jar:
+	
+		i) Read Excel file location
+	   ii) Create Object for workbook
+	  iii) Go to the sheet to be worked on
+	   iv) Row iteration and get row values
+	    v) cell iiteration and get cell values
+	    
+	    
+	Steps with JSL hars:
+	
+	Note : JXL jar will work only if excel is saved in 97-2003 format.
+													   -------
+												
+	 	i) Read File location
+	   ii) Get Workbook
+	  iii) Get Sheet
+	   iv) Get rows
+	    v) Get columns	
+	   vi) Iterate and get values   
+												
+	
+	
